@@ -1,0 +1,5 @@
+Till java 1.7 interface is a collection of abstract methods and  static and final variables.
+
+concreate method means method which contains body.
+
+method which does not contain any body is called abstract method.

@@ -1,0 +1,51 @@
+syntex page
+
+access_modifier data_type variable_name=value;
+
+access_modifier return_type method_name()
+
+creating string object Syntex:
+
+String object_name=new String("RRR");
+
+Creating StringBuffer Object Syntex:
+
+StringBuffer object_name=new StringBuffer("RRR");
+
+creating Array syntex:
+
+data_type array_name[]=new data_type[size]; //1D Array
+
+data_type array_name[][]=new data_type[row_size][column_size]; //2D Array
+
+
+
+this keyword is used to refer to the current object.
+
+Get and Set
+You learned from the previous chapter that private variables can only be accessed within the same class (an outside class has no access to it). However, it is possible to access them if we provide public get and set methods.
+
+The get method returns the variable value, and the set method sets the value.
+
+Syntax for both is that they start with either get or set, followed by the name of the variable, with the first letter in upper case:
+
+
+public class Person {
+  private String name; // private = restricted access
+
+  // Getter
+  public String getName() {
+    return name;
+  }
+
+
+import java.io*;
+import java.util*;
+import java.util.Scanner;
+
+
+  // Setter
+  public void setName(String newName) {
+    this.name = newName;
+  }
+}

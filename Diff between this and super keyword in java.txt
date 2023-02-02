@@ -1,0 +1,8 @@
+Difference between this and super keyword in java.
+
+
+this is used for accessing variables and methods of current class. 
+super is used for accessing variables and methods of immediate super class.
+
+this is used in constructor chaining in current class. 
+super is used in constructor chaining in immediate super class.

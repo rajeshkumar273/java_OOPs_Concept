@@ -1,0 +1,103 @@
+In Java, a method signature is part of the method declaration. 
+It's the combination of the method name and the parameter list.
+
+
+
+Method overloading is also known as Compile-time Polymorphism, Static Polymorphism, or Early binding in Java. In Method overloading compared to parent argument, child argument will get the highest priority. 
+
+Overloading is about the same function have different signatures. Overriding is about the same function, same signature but different classes connected through inheritance.
+
+
+
+
+
+Different Ways of Method Overloading in Java
+
+	1.Changing the Number of Parameters. (Taking 2 parameters in one method 3 in another)
+	
+		 ==> public int multiply(int a, int b)
+		
+		 ==> public int multiply(int a, int b, int c)
+		
+	2.Changing Data Types of the Arguments.
+
+		==>   public int Prod(int a, int b, int c)
+	
+		==>   public double Prod(double a, double b, double c)
+
+	
+	3.Changing the Order of the Parameters of Methods
+
+		==> public void StudentId(String name, int roll_no)
+
+		==> public void StudentId(int roll_no, String name)
+
+
+Method Overloading with TypePromotion (Type - 1)
+
+				byte --> short
+					    |	
+					    
+		                   char--> int -->float --> double -->
+	
+					    |	
+					   long
+
+		void sum(int a long b); 
+		void sum(int a,int b, int c);
+
+		obj.sum(20,20) //now int literal will be promoted as long
+
+Method Overloading with TypePromotion (Type - 2)
+
+// Method Overloading with Type Promotion if matching found
+
+	//If there are matching type arguments in the method, type promotion is not performed
+
+
+public void plusMethod(int a, int b)
+
+public void plusMethod(long a, long b)
+
+obj.plusMethod(30,20); //Now, It return Int arg Method
+
+
+Method Overloading with TypePromotion (Type - 3)
+
+Method Overloading with Type Promotion in case of ambiguity
+If there are no matching type arguments in the method, and each method promotes similar number of arguments, there will be ambiguity.
+
+
+Rules for Java Method Overriding
+The method must have the same name as in the parent class
+The method must have the same parameter as in the parent class.
+There must be an IS-A relationship (inheritance).
+
+
+
+
+Can we override static method?
+No, a static method cannot be overridden. 
+
+Why can we not override static method?
+It is because the static method is bound with class whereas instance method is bound with an object. Static belongs to the class area, and an instance belongs to the heap area.
+
+Can we override java main method?
+No, because the main is a static method.
+
+  // private methods are not overridden
+
+  // final methods inherited but can not overridden.
+
+private Method cannot be Overridden , because it cannot be inherited.
+Final method can be inherited but cannot be overridden.
+
+Java Access Modifiers with Method Overriding
+
+If you are overriding any method, overridden method (i.e. declared in subclass) must not be more restrictive.
+
+The default modifier is more restrictive than protected. That is why, there is a compile-time error.
+
+
+
+ 
