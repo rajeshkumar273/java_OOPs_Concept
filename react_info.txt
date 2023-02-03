@@ -1,0 +1,212 @@
+We will need Node.js javascript runtime and npm(Node.js package manager) installed.
+
+NPM is included with Node.js which you can download and install from Node.js
+
+cd../.. to back two floders
+
+creating a new React App 
+
+npx create-react-app app-name
+
+npx create-react-app Amex
+
+cd Amex
+
+npm stands for Node Package Manager
+
+npm start (Which is used for to start the server)
+
+app.js ---->
+
+
+
+VS Scode features which is used for development
+-----------------------------------------------
+
+Markdown open preview ( Ctrl+Shift+V)
+
+Markdown Open Preview to the side (Ctrl+KV)
+
+
+
+React Folder Structure Explanation And Simple Hello WorldApp
+------------------------------------------------------------
+Floders are avaliable 
+
+node_modules (means it will have all the  dependencies over here what are all to be installed by default it will be there)
+
+public (index.html, image files,text file all that icon)
+
+src(App.js, App.css,index.css,index.js logo.svg,App. test.js by default available)
+
+In app.js
+---------
+import react,{Component} from 'react';
+class App extends Component {
+	render(){
+		return (
+			<div>
+				<h1> hello world </h1>
+			</div>
+		);
+	}
+}
+export default App;
+
+-----------------------------------------------------------------------
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class App extends React.Component {
+	render() {
+		const mystyle = {
+			color: "Red",
+			backgroundColor: "lightBlue",
+			padding:"10px",
+			fontFamily: "Times New Roman"
+		};
+		return (
+			<div>
+			<h1 style={mystyle}>Hello Everyone </h1>
+			<p>Here, you can find all CS tutorials. </p>
+			</div>
+		);
+	}
+}
+export default App;
+
+--------------------------------------
+Day 06:
+
+Components are two types:
+
+functional and class components
+
+The component-based approach was introduced to overcome an issue. In this approach, 
+the entire application is divided into a small logical group of code, which is known as components.
+
+A component is considered as the core building blocks of a React application. It makes the task of building UIs much easier.
+Each Component exists in the same space, but they work independently from one another and merge all in a parent component,
+which will be the final UI of your application.
+
+Every React component have their own structure, methods as well as APIs. They can be reusable as per your need. For better
+understanding, consider the entire UI as a tree. Heap, the root is the starting component, and each of the other pieces becomes branches,
+which are further divided into sub-branches.
+ 
+
+In React JS, We have mainly two types of components. They are
+
+	Functional Components
+
+	In react, function components are a way to write components that only contain a render method and don't 
+	have their own state. They are simply javascript functions that may or may not receive data as parameters.
+	
+	we can create a function that takes PROPS (PROPERTIES) as input and returns what should be rendered. a valid
+	functional component can be shown in the below example.
+	
+	
+	function WelcomeMessage(props) {
+		return <h1> Welcome to the, {props.name} </h1>
+		}
+
+
+	import react,{Component} from 'react';
+	class App extends Component {
+	render(){
+		return (
+			<div>
+				<first/>
+				<second/>
+			</div>
+		);
+	}
+}
+
+class first extends react.component {
+	render() {
+			return (
+				<div>
+					<h1> javatpoint</h1>
+				</div>
+			);
+	}
+
+}
+
+class second extends react.component {
+	render() {
+			return (
+				<div>
+					<h2> www.javatpoint </h2>
+					<h2>This website contains the great React JS Tutorial.</h2>
+				</div>
+			);
+	}
+
+}
+
+export default app;
+
+
+	Class Components
+	
+	class components are more complex than functional components. It requires you to extend form react.
+	Component and create a render function which returns a react element. you can pass data from one class to other 
+	class components. you can create a class by defining a class that extends component and has a render function.
+	valid class component is shown in the below example.
+
+	import react,{Component} from 'react';
+	class App extends Component {
+		constructor() {
+			super();
+			this.state ={
+				data:
+				{
+					{
+					"name":"Rajesh"
+					},
+
+					{
+					"name":"kumar"
+					},
+					
+					{
+					"name":"MRK"
+					},
+				}
+				}
+				}
+				render() {
+					
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
