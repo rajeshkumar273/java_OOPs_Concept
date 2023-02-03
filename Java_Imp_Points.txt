@@ -281,7 +281,17 @@ if both parent & child class methods are static then it become method hiding.
 
 if both are not static it become method overriding.
 
+			Overloading  	  	Overriding
+	
+method names		must be same		must be same
 
+argument		must be different	must be same
+			(Atleast order)		(including order)
+
+private/final/
+static methods		can be overloaded 	cannot be overridden
+
+	
 
 
 
