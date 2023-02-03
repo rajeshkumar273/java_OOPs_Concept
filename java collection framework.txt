@@ -1,0 +1,80 @@
+In java classes and interfaces are important
+
+interface
+	classes
+		method
+
+collections is a framework provided by java
+
+This framework provides many interfaces and their implemented classes in order to 
+		store group of objects(elements) in a single entity.
+
+collections framework
+	1. collection interface
+		a. List <interface>
+
+			1.ArrayList
+			2.Linked List
+			3.Vector
+			4.Stack
+	
+		b. Set <interface>
+
+			1.HashSet
+			2.LinkedHashSet
+			3.TreeSet 
+		
+		c. Queue <interface>
+			1.ArrayQueue
+			2.PriorityQueue
+	collections class is also there for sorting and filter and more.
+
+	2. Map interface
+
+
+
+collection is group of classes & interfaces (Abstration and Interfaces we need)
+
+	objective --> simplify usage of data structures
+
+The Iterable interface (java.lang.Iterable) is the root interface of the Java collection classes.
+The Collection interface extends Iterable interface, so all subtypes of Collection implement the Iterable interface.
+
+This interface stands to represent data-structures whose value can be traversed one by one.
+
+extends for classes
+implements for intefaces
+
+interfaces are true or absolute or perfect  abstraction methods 
+	example is collections framework
+
+	we are using add item without knowing internal code 
+		that is example of interface.
+
+The main difference blw ArrayList and Array 
+size 
+
+In Array Size is fixed while creating Array you have mention size (Fixed)
+
+[dynamic] In ArrayList size is dynamic (Automatically grow size)
+
+Vector --> Synchronized (It cannot work with more than one thread)
+
+ArrayList --> Not Synchronized (supports Multithreading)
+
+LinkedList --> implements doubly linked list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
